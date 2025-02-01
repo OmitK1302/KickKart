@@ -32,7 +32,7 @@ const ProductDetail = ({product}) => {
                     <div className='flex flex-col gap-2.5 mt-4 pl-4'>
 
                         {reviews.map(review => (
-                            <div className='flex flex-col gap-2.5 w-full mb-4'>
+                            <div className='flex flex-col gap-2.5 w-full mb-4' key={review.user}>
                                 <h2 className='font-montserrat font-semibold text-black'>{review.user}</h2>
 
                                 <p className='text-lg font-medium'>

@@ -9,7 +9,7 @@ import ProductDetail from '../sections/ProductDetail';
 const ProductDetailScreen = () => {
   const {productId} = useParams();
   console.log(productId);
-  const product = products.find((p) => p._id === Number(productId)); // find is a method that returns the value of the first element in the provided array that satisfies the condition specified in a callback function
+  const product = products.find((p) => p._id === productId); // find is a method that returns the value of the first element in the provided array that satisfies the condition specified in a callback function
   console.log(product);
 
 
