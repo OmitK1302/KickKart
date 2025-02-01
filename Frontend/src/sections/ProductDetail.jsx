@@ -4,7 +4,7 @@ import star from '../assets/icons/star.svg'
 const ProductDetail = ({product}) => {
     const reviews = product.reviews;
   return (
-    <section className='container mx-auto px-4 py-8'>
+    <section className='container mx-auto px-4 py-16 sm:py-8'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
             <div className='w-full outline outline-gray-200 rounded-md'>
                 <img src={product.images[1]} alt='product' className='w-full rounded-md p-3' />
