@@ -5,10 +5,11 @@ const ProductDetail = ({product}) => {
     const reviews = product.reviews;
   return (
     <section className='container mx-auto px-4 py-16 sm:py-8'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
-            <div className='w-full outline outline-gray-200 rounded-md'>
-                <img src={product.images[1]} alt='product' className='w-full rounded-md p-3' />
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-16'>
+            <div className='w-full '>
+                <img src={product.images[1]} alt='product' className='w-full rounded-md p-3 outline outline-gray-200 ' />
             </div>
+
             <div>
                 <h2 className='text-2xl font-mono font-semibold text-[#bdbfbf]'>{product.brand}</h2>
                 <h2 className='text-2xl font-semibold font-montserrat'>{product.name}</h2>

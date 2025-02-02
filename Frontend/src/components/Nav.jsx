@@ -32,9 +32,9 @@ const Nav = () => {
             <ul className={`absolute right-0 top-20 flex flex-col gap-5 w-32 bg-coral-red justify-center items-center py-5 rounded-md text-primary list-none ${!showNav && "hidden"}`}>
                 {navLinks.map(navItem => 
                     <li key={navItem.label}>
-                        <a href={navItem.href} className="font-montserrat leading-normal text-lg">
+                        <Link to={navItem.href} className="font-montserrat leading-normal text-lg">
                             {navItem.label}
-                        </a>
+                        </Link>
                     </li>
                 )}
             </ul>
