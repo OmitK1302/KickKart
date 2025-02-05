@@ -4,10 +4,10 @@ const ProductCard = ({imgURL, name, price, rating}) => {
   return (
     <div className="flex flex-col w-full max-sm:w-full border-gray-50 border-2 rounded-lg p-4 shadow-xl hover:shadow-inner insert-shadow-sm h-full hover:bg-gray-50">
       <div className="flex flex-col gap-2">
-        <img src={imgURL} alt={name} className="w-full h-auto" />
+        <img src={imgURL} alt={name} className="w-full sm:h-48 md:h-64 lg:h-80 object-contain" />
         
         <div className="mt-8 flex justify-start gap-2.5">
-            <img className="object-contain" src={star} alt="rating" width={24} height={24} />
+            <img className="" src={star} alt="rating" width={24} height={24} />
             <p className="font-montserrat text-xl leading-normal text-slate-gray">({rating})</p>
         </div>
 

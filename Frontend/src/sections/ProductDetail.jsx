@@ -33,8 +33,8 @@ const ProductDetail = ({product}) => {
                     <div className='flex flex-col gap-2.5 mt-4 pl-4'>
 
                         {reviews.map(review => (
-                            <div className='flex flex-col gap-2.5 w-full mb-4' key={review.user}>
-                                <h2 className='font-montserrat font-semibold text-black'>{review.user}</h2>
+                            <div className='flex flex-col gap-2.5 w-full mb-4' key={review.name}>
+                                <h2 className='font-montserrat font-semibold text-black'>{review.name}</h2>
 
                                 <p className='text-lg font-medium'>
                                     {review.comment}
@@ -73,12 +73,12 @@ export default ProductDetail
 //     "rating": 4.8,
 //     "reviews": [
 //       {
-//         "user": "RunningMan123",
+//         "name": "RunningMan123",
 //         "rating": 5,
 //         "comment": "These shoes are amazing! They're so light and comfortable, and they make me feel like I can run forever."
 //       },
 //       {
-//         "user": "FitnessJane",
+//         "name": "FitnessJane",
 //         "rating": 4.5,
 //         "comment": "Great shoes for running, but the sizing seems to run a bit small."
 //       }

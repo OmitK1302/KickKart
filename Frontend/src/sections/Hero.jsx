@@ -14,9 +14,9 @@ const Hero = () => {
       <div className="relative xl:w-[40%] flex flex-col justify-center items-start w-full max-xl:padding-x pt-28 z-10">
         <p className="font-montserrat text-xl text-coral-red">Our Summer Collection</p>
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] font-bold">
-          <span className="xl:bg-white xl:whitespace-nowrap z-10 pr-10">The New Arrival</span>
+          <span className="xl:bg-white xl:whitespace-nowrap z-10 pr-10">The New Arrivals</span>
           <br />
-          <span className="text-coral-red mt-3 inline-block">KickCart</span> Shoes
+          <span xl:bg-white xl:whitespace-nowrap z-10 pr-10>at </span><span className="text-coral-red mt-3 inline-block">KickCart</span>
         </h1>
         <p className="text-slate-gray text-lg font-montserrat leading-8 mt-6 mb-14 sm:max-w-sm">Discover stylish new arrivals, quality comfort, and innovation for your active life</p>
 

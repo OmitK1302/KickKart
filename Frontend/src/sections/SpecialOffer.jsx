@@ -1,6 +1,7 @@
 import { arrowRight } from "../assets/icons";
 import { offer } from "../assets/images";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 const SpecialOffer = () => {
   return (
@@ -24,12 +25,15 @@ const SpecialOffer = () => {
         </p>
 
         <div className="mt-6 flex flex-wrap gap-4">
-          <Button label={"Shop now"} iconURL={arrowRight}/>
+          <Link to={"/products"}>
+            <Button label={"Shop now"} iconURL={arrowRight}/>
+          </Link>
+          
 
           <Button label={"Learn More"} backgroundColor = "bg-white" borderColor = "border-slate-gray" textColor = "text-slate-gray"/>
         </div>
       </div>
-    </section>
+    </section> 
 
   )
 }

@@ -9,12 +9,17 @@
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm run dev --prefix Frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder.js -d"
   },
   "author": "Omit Kumar",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.21.2"
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.6"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
