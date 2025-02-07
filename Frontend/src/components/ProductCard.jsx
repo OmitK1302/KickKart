@@ -2,7 +2,7 @@ import { star } from "../assets/icons"
 
 const ProductCard = ({imgURL, name, price, rating}) => {
   return (
-    <div className="flex flex-col w-full max-sm:w-full border-gray-50 border-2 rounded-lg p-4 shadow-xl hover:shadow-inner insert-shadow-sm h-full hover:bg-gray-50">
+    <div className="flex flex-col w-full max-sm:w-full border-gray-200 border-2 rounded-lg p-4 shadow-xl hover:shadow-inner insert-shadow-sm h-full hover:bg-gray-50">
       <div className="flex flex-col gap-2">
         <img src={imgURL} alt={name} className="w-full sm:h-48 md:h-64 lg:h-80 object-contain" />
         
