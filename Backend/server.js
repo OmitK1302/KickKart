@@ -3,7 +3,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import connectDB from './config/db.js';
-import products from './Data/products.js';
+// import products from './Data/products.js';
+import productRoutes from './routes/productRoutes.js'
 
 connectDB();
 const port = process.env.PORT || 5000;
@@ -16,17 +17,20 @@ app.get('/', (req, res) => {
 });
 
 // Here we are sending the products data as a response to the request
-app.get('/api/products', (req, res) => {
-    // res.send("/api/prouducts is running...");
-    res.json(products);
-});
+// app.get('/api/products', (req, res) => {
+//     // res.send("/api/prouducts is running...");
+//     res.json(products);
+// });
 
-// Here we are sending one product data as a response to the request
-// params is an object that contains the parameters parsed from the URL path
-app.get('/api/products/:id', (req, res) => {
-    const product = products.find((p) => p._id === req.params.id);
-    res.json(product);
-});
+// // Here we are sending one product data as a response to the request
+// // params is an object that contains the parameters parsed from the URL path
+// app.get('/api/products/:id', (req, res) => {
+//     const product = products.find((p) => p._id === req.params.id);
+//     res.json(product);
+// });
+
+
+app.use('/api/products', productRoutes);
 
 // app.listen will start the server
 app.listen(port, () => {
