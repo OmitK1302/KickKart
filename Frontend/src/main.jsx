@@ -5,6 +5,7 @@ import App from './App'
 import './index.css'
 import ProductScreen from './screens/ProductScreen'
 import ProductDetailScreen from './screens/ProductDetailScreen'
+import AboutUs from './screens/AboutUs'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: '/product/:productId',
     element: <ProductDetailScreen />,
+  }, 
+  {
+    path: '/about',
+    element: <AboutUs />
   }
 
 ],
