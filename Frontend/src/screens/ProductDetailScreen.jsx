@@ -29,7 +29,7 @@ const ProductDetailScreen = () => {
   return (
     <div className='relative'>
       <Nav />
-
+      
       {(product) ? (
         <section className='padding'>
           <ProductDetail key={product._id} product={product}/>
