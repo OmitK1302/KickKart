@@ -7,6 +7,7 @@ import Nav from '../components/Nav';
 import { Footer } from '../sections';
 import Subscribe from '../sections/Subscribe';
 import ProductDetail from '../sections/ProductDetail';
+import Loader from '../components/Loader';
 // import axios from 'axios';
 
 const ProductDetailScreen = () => {
@@ -26,7 +27,7 @@ const ProductDetailScreen = () => {
       <Nav />
       
       {isLoading ? (
-        <h2 className='padding sm:py-16 py-8 px-8 font-montserrat text-coral-red text-center text-3xl font-bold'>Loading...</h2>
+        <Loader />
       ) : error ? (
         <div>
           <h2 className='text-red-600 text-3xl font-montserrat py-8 px-8 sm:py-16 padding'>Error</h2>

@@ -57,35 +57,3 @@ const ProductDetail = ({product}) => {
 }
 
 export default ProductDetail
-
-
-// {
-//     "_id": 1,
-//     "name": "Nike Air Zoom Pegasus 39",
-//     "description": "A lightweight, responsive running shoe designed for speed and comfort. Perfect for athletes and fitness enthusiasts who train on pavement.",
-//     "price": "$ 129.99",
-//     "currency": "USD",
-//     "category": "Running",
-//     "brand": "Nike",
-//     "sizes": ["6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5"],
-//     "colors": ["Black/Volt", "Blue Lagoon/Photon Dust", "Photon Dust/Black/Volt"],
-//     "stock": 100,
-//     "rating": 4.8,
-//     "reviews": [
-//       {
-//         "name": "RunningMan123",
-//         "rating": 5,
-//         "comment": "These shoes are amazing! They're so light and comfortable, and they make me feel like I can run forever."
-//       },
-//       {
-//         "name": "FitnessJane",
-//         "rating": 4.5,
-//         "comment": "Great shoes for running, but the sizing seems to run a bit small."
-//       }
-//     ],
-//     "images": [
-//       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8bb6250a-af23-4b73-bf8c-ded532982e12/NIKE+AIR+ZOOM+PEGASUS+39+4E.png",
-//       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f6e3c5bc-0fa7-4537-928e-f4d17d94c926/NIKE+AIR+ZOOM+PEGASUS+39+4E.png",
-//       "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7053c29c-2ec3-415c-80fb-f37954f13a4d/NIKE+AIR+ZOOM+PEGASUS+39+4E.png"
-//     ]
-//   },

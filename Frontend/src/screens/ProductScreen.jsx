@@ -4,6 +4,8 @@ import H_Products from '../sections/H_Products.jsx';
 import Footer from '../sections/Footer.jsx';
 import Subscribe from '../sections/Subscribe.jsx';
 import { useGetProductsQuery } from '../slices/productsApiSlice.js';
+import Loader from '../components/Loader.jsx';
+import Message from '../components/Message.jsx';
 
 const ProductScreen = () => {
   const { data: products, isLoading, error } = useGetProductsQuery();
@@ -12,13 +14,12 @@ const ProductScreen = () => {
       <Nav />
 
       {isLoading ? (
-        <h2 className='padding sm:py-16 py-8 px-8 font-montserrat text-coral-red text-center text-3xl font-bold'>Loading...</h2>
+        <Loader />
       ) : 
       error ? (
-        <div>
-          <h2 className='text-red-600 text-3xl font-montserrat py-8 px-8 sm:py-16 padding'>Error</h2>
-          <p>{error?.data?.message || error?.error || "An unexpected error occurred."}</p>
-        </div>
+        <section className='px-4 py-28'>
+          <Message value={error?.data?.message || error?.error || "An unexpected error occurred."} />
+        </section>
       ) : 
       (
         <section className='padding'>
@@ -26,6 +27,7 @@ const ProductScreen = () => {
         </section>
       )}
 
+      
       <section className='padding'>
         <Subscribe />
       </section>
