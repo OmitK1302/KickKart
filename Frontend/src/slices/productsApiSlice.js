@@ -1,6 +1,7 @@
 import { apiSlice } from "./apiSlice";
 import { PRODUCTS_URL } from "../backendConstants";
 
+// here we are using the apiSlice since there are endpoints which are dealing with asynchronous request.
 export const productsApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
         getProducts: builder.query({

@@ -8,6 +8,7 @@ import './index.css'
 import ProductScreen from './screens/ProductScreen'
 import ProductDetailScreen from './screens/ProductDetailScreen'
 import AboutUs from './screens/AboutUs'
+import CartScreen from './screens/cartScreen'
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,11 @@ const router = createBrowserRouter([
   }, 
   {
     path: '/about',
-    element: <AboutUs />
+    element: <AboutUs />,
+  },
+  {
+    path: '/cart',
+    element: <CartScreen />
   }
 
 ],

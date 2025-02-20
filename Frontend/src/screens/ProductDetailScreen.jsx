@@ -8,6 +8,7 @@ import { Footer } from '../sections';
 import Subscribe from '../sections/Subscribe';
 import ProductDetail from '../sections/ProductDetail';
 import Loader from '../components/Loader';
+import Message from '../components/Message';
 // import axios from 'axios';
 
 const ProductDetailScreen = () => {
@@ -29,10 +30,8 @@ const ProductDetailScreen = () => {
       {isLoading ? (
         <Loader />
       ) : error ? (
-        <div>
-          <h2 className='text-red-600 text-3xl font-montserrat py-8 px-8 sm:py-16 padding'>Error</h2>
-          <p>{error?.data?.message || error?.error || "An unexpected error occurred."}</p>
-        </div>
+        <Message className="padding" color="red" value={error?.data?.message || error?.error || "An unexpected error occurred."} />
+        
       ) : (
         <>
           <section className='padding'>
