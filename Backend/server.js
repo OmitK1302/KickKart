@@ -7,12 +7,23 @@ import connectDB from './config/db.js';
 import productRoutes from './routes/productRoutes.js';
 import userRoutes from "./routes/userRoutes.js";
 
+import cookieParser from 'cookie-parser';
+
 import { notFound, errorHandler } from './middlewares/errorMiddleware.js';
 
 connectDB();
 const port = process.env.PORT || 5000;
 
 const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({ extended:true }));
+// These are to use the req.body().
+
+
+app.use(cookieParser());
+// Now we can access the request.cookies.jwt
+
 
 // app.get is a method in which we can pass two parameters, the first one is the path and the second one is a callback function which will be executed when the path is hit.
 app.get('/', (req, res) => {
