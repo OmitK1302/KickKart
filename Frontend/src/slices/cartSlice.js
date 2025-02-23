@@ -14,12 +14,13 @@ const cartSlice = createSlice({
         addToCart: (state, action) => {
             // Add to cart functionality.
             const item = action.payload; // Get the item from the action payload. The payload is the data that is passed when the action is dispatched or called.
-            console.log(item);
+            // console.log(item);
             
-            const existItem = state.cartItems.find((x) => x._id === item._id);
+            // const existItem = state.cartItems.find((x) => (x._id === item._id));
+            const existItem = state.cartItems.find((x) => (x._id === item._id && x.size === item.size));
 
             if(existItem){
-                state.cartItems = state.cartItems.map((x) => x._id === existItem._id ? item : x);
+                state.cartItems = state.cartItems.map((x) => x._id === existItem._id && x.size === existItem.size ? item : x);
             }
             else{
                 state.cartItems = [...state.cartItems, item];
@@ -45,7 +46,7 @@ const cartSlice = createSlice({
 
         removeFromCart: (state, action) => {
             const item = action.payload;
-            state.cartItems = state.cartItems.filter((x) => x._id != item._id);
+            state.cartItems = state.cartItems.filter((x) => !(x._id === item._id && x.size === item.size));
             return updateCart(state);
         },
     }, // The reducers contains the functionalities of the current slice. In this case it will contain functionalities like adding to cart, removing to cart etc.
