@@ -56,3 +56,13 @@
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
 }
+
+.Toastify__toast {
+  position: fixed !important;
+  top: 20px;
+  right: 20px;
+  z-index: 99999 !important;
+  background: white !important;
+  color: black !important;
+  border-radius: 5px !important;
+}

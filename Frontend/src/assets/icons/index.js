@@ -12,6 +12,10 @@ import truckFast from './truck-fast.svg'
 import twitter from './twitter.svg'
 import cross from './x-lg.svg'
 import cart from './cart.svg'
+import account from './account.png'
+import key from './key.png'
+import hide from './hide.png'
+import show from './view.png'
 
 export {
     arrowRight,
@@ -27,5 +31,9 @@ export {
     truckFast,
     twitter,
     cross,
-    cart
+    cart,
+    account,
+    key,
+    hide,
+    show
 }

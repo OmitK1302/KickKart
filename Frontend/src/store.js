@@ -1,6 +1,7 @@
 import {configureStore} from '@reduxjs/toolkit'; // Import configureStore from redux toolkit to create a store.
 import { apiSlice } from './slices/apiSlice';
-import cartSlice from './slices/cartSlice'; // Import the cartSlice from the slices folder.
+import cartSliceReducer from './slices/cartSlice'; // Import the cartSlice from the slices folder.
+import authSliceReducer from './slices/authSlice';
 
 // A store is an object that holds the application's state tree.
 // An application's state tree is a representation of the application's state.
@@ -8,7 +9,8 @@ import cartSlice from './slices/cartSlice'; // Import the cartSlice from the sli
 const store = configureStore({
     reducer: {
         [apiSlice.reducerPath]: apiSlice.reducer, // Add the reducer that is used by the API slice to the store
-        cart: cartSlice, // Add the cart slice to the store
+        cart: cartSliceReducer, // Add the cart slice to the store
+        auth: authSliceReducer,
     },
     middleware: (getDefaultMiddleware) => 
         getDefaultMiddleware().concat(apiSlice.middleware), // Add the middleware (i.e. the API slice middleware) to the store. 

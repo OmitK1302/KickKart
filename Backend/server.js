@@ -16,11 +16,13 @@ const port = process.env.PORT || 5000;
 
 const app = express();
 
+// Body parser middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
 // These are to use the req.body().
 
 
+// Cookie parser middleware
 app.use(cookieParser());
 // Now we can access the request.cookies.jwt
 

@@ -1,5 +1,10 @@
 import {Hero, PopularProducts, SuperQuality, Services, SpecialOffer, Subscribe, Footer, CustomerReview} from "./sections";
 import Nav from "./components/Nav";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+// import { toast } from "react-toastify";
+
+
 const App = () => (
   
   
@@ -37,6 +42,12 @@ const App = () => (
     <section className="padding-x padding-t pb-8 bg-black">
       <Footer />
     </section>
+
+    {/* <button onClick={() => toast.success("Toast test!")} className="border-2 p-2 bg-green-500 text-white">
+      Test Toast
+    </button> */}
+
+    <ToastContainer />
 
   </main>
 );
