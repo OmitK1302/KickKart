@@ -57,8 +57,8 @@ const CheckoutSteps = ({step1, step2, step3, step4}) => {
 
         <div>
             {step4 ? (
-                <Link to={'/order'}>
-                    <button className='text-[#ff6452] font-bold p-2 bg-black' value={"Place Order"} />
+                <Link to={'/placeorder'}>
+                     <button className='text-[#ff6452] font-bold'>Place Order</button>
                 </Link>
             ) : (
                 <button className='text-[#a6a7aa]' disabled>

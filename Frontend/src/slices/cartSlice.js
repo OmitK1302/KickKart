@@ -58,9 +58,14 @@ const cartSlice = createSlice({
         savePaymentMethod: (state, action) => {
             state.paymentMethod = action.payload;
             return updateCart(state);
-        }
+        },
+
+        clearCartItems: (state, action) => {
+            state.cartItems = [];
+            return updateCart(state);
+        } 
     }, // The reducers contains the functionalities of the current slice. In this case it will contain functionalities like adding to cart, removing to cart etc.
 });
 
-export const {addToCart, removeFromCart, saveShippingAddress, savePaymentMethod} = cartSlice.actions; // Export the actions from the slice.
+export const {addToCart, removeFromCart, saveShippingAddress, savePaymentMethod, clearCartItems} = cartSlice.actions; // Export the actions from the slice.
 export default cartSlice.reducer; // Export the reducers from the slice.

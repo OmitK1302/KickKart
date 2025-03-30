@@ -16,7 +16,7 @@ const CartScreen = () => {
     const { cartItems } = cart; // Destructure the cartItems from the cart state.
     
     const totalItems = cartItems.reduce((acc, item) => acc + Number(item.qty), 0);
-    console.log(cart);
+    // console.log(cart);
 
     const checkoutHandler = () => {
         navigate('/login?redirect=/shipping')

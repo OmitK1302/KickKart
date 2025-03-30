@@ -20,7 +20,7 @@ const Nav = () => {
     const dispatch = useDispatch();
 
     const [logoutApiCall] = useLogoutMutation();
-    console.log(userInfo);
+    // console.log(userInfo);
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const handleLogout = async () => {
