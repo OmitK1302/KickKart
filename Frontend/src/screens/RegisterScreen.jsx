@@ -79,7 +79,7 @@ const RegisterScreen = () => {
 
     return (
         <>
-            <Nav />
+            {/* <Nav /> */}
             <div className='w-full px-4 py-24 sm:pt-28 flex justify-center items-center font-montserrat'>
                 <div className='w-96 p-12 border-x-2 mt-16'>
                     <h1 className='text-3xl mb-4 font-bold text-coral-red'>Sign Up</h1>
@@ -159,9 +159,11 @@ const RegisterScreen = () => {
                 </div>
             </div>
 
-            <section className='bg-black padding'>
+            {isLoading && <Loader />}
+
+            {/* <section className='bg-black padding'>
                 <Footer />
-            </section>
+            </section> */}
 
             {showErrorDialogBox && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">

@@ -64,7 +64,7 @@ const Nav = () => {
                         {/* User Name as a Clickable Button */}
                         <button 
                             onClick={() => setDropdownOpen(!dropdownOpen)} 
-                            className="font-montserrat text-lg text-slate-gray hover:text-black hover:font-semibold"
+                            className="font-montserrat text-lg text-slate-gray hover:text-black font-semibold"
                         >
                             {userInfo.name.split(" ")[0]}
                         </button>

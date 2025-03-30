@@ -16,6 +16,7 @@ import account from './account.png'
 import key from './key.png'
 import hide from './hide.png'
 import show from './view.png'
+import paypalLogo from './paypalLogo.png'
 
 export {
     arrowRight,
@@ -35,5 +36,6 @@ export {
     account,
     key,
     hide,
-    show
+    show,
+    paypalLogo
 }

@@ -25,7 +25,7 @@ const ProductDetailScreen = () => {
   const {data: product, isLoading, error} = useGetProductsDetailsQuery(useParams().productId);
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       
       {isLoading ? (
         <Loader />
@@ -45,9 +45,9 @@ const ProductDetailScreen = () => {
         <Subscribe />
       </section>
 
-      <section className='bg-black padding'>
+      {/* <section className='bg-black padding'>
         <Footer />
-      </section>
+      </section> */}
     </>
   )
 }

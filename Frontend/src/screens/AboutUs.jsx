@@ -6,16 +6,16 @@ import AboutInfo from '../sections/AboutInfo'
 const AboutUs = () => {
   return (
     <>
-        <Nav />
+        {/* <Nav /> */}
 
         <section className='padding mt-4'>
             <AboutInfo />
         </section>
 
 
-        <section className='bg-black padding'>
+        {/* <section className='bg-black padding'>
             <Footer />
-        </section>
+        </section> */}
     </>
   )
 }

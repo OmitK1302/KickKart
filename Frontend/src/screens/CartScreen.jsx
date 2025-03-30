@@ -23,7 +23,7 @@ const CartScreen = () => {
     }
     return (
         <>
-            <Nav />
+            {/* <Nav /> */}
 
             <div className='sm:px-8 py-20 sm:py-24 flex xl:flex-row flex-col gap-4 w-full'>
                 <div className='py-6 px-0 sm:py-8 mt-4 border-2 shadow-inner rounded-md xl:w-1/2'>
@@ -88,9 +88,9 @@ const CartScreen = () => {
             </div>
 
 
-            <section className='bg-black padding'>
+            {/* <section className='bg-black padding'>
                 <Footer />
-            </section>
+            </section> */}
         </>
     );
 }
